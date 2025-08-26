@@ -1,0 +1,31 @@
+data_loaders:
+  TruthfulQADataLoader:
+    class: JsonLoader
+    paths:
+    - ./data/basic_ability/common_sense/TruthfulQA_V1_jsoncsv/qa
+    num: 300
+    formatter_name: TruthfulQA_format
+models:
+  openai_evaluator:
+    class: ApiModel
+    name: openai_evaluator
+    config:
+      provider: openai
+      model_identifier: YOUR_MODEL
+      api_key: YOUR_API_KEY
+      base_url: YOUR_BASE_URL
+      concurrency: 1
+tasks:
+- task_class: TruthfulMCQTask
+  module_path: PQAEF.tasks.multi_choice.truthful_qa_task
+  loader_names:
+  - TruthfulQADataLoader
+  config:
+    llm_model_name: openai_evaluator
+data_dumper:
+  output_dir: ./output/test
+  file_prefix: cped_annotated
+  chunk_size: 5000
+statistics_generator:
+  analyses_to_run:
+  - TruthfulQA

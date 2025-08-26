@@ -1,0 +1,13 @@
+Choose the most plausible alternative based on the given premise.
+
+{scene}
+
+Question: {question_text}
+
+Options:
+A. {option_A}
+B. {option_B}
+
+Your task: Based on common sense and causal reasoning, select the most plausible alternative. You must respond with only the single letter (A or B). No explanation, punctuation, or any other text is allowed.
+
+Answer:

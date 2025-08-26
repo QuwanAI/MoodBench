@@ -1,0 +1,10 @@
+You are a professional natural language processing assistant. 
+
+IMDb Task Description:
+{scene}
+
+Options:
+A. {option_A}
+B. {option_B}
+
+What is the sentiment of this review? Please only return the letter corresponding to the correct answer, no additional explanation needed:

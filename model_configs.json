@@ -1,0 +1,15 @@
+[
+    {
+        "class": "ApiModel",
+        "name": "openai_evaluator",
+        "config": {
+            "provider": "openai",
+            "model_identifier": "YOUR_MODEL",
+            "api_key": "YOUR_API_KEY",
+            "base_url": "YOUR_BASE_URL",
+            "concurrency": 1
+        }
+    }
+
+   
+]

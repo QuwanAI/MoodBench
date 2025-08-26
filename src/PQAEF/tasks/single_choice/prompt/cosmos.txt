@@ -1,0 +1,12 @@
+You are a professional natural language processing assistant. 
+
+Cosmos QA Task Description:
+{scene}
+
+Options:
+A. {option_A}
+B. {option_B}
+C. {option_C}
+D. {option_D}
+
+Please carefully Read the context and question carefully, then choose the most logical and reasonable answer from the options provided. Only respond with the option letter (A, B, C, or D), no additional explanation needed:

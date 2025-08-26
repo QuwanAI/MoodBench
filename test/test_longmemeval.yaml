@@ -1,0 +1,33 @@
+data_loaders:
+  LongMemEvalDataLoader:
+    class: JsonLoader
+    paths:
+    - ./data/company_ability/memory/longmemeval/longmemeval_oracle.json
+    num: 300
+    formatter_name: LongMemEvalFormatter
+    seed: 42
+models:
+  openai_evaluator:
+    class: ApiModel
+    name: openai_evaluator
+    config:
+      provider: openai
+      model_identifier: YOUR_MODEL
+      api_key: YOUR_API_KEY
+      base_url: YOUR_BASE_URL
+      concurrency: 1
+tasks:
+- task_class: LongMemEvalTask
+  module_path: PQAEF.tasks.longmemeval.long_mem_eval_task
+  loader_names:
+  - LongMemEvalDataLoader
+  config:
+    llm_model_name: openai_evaluator
+    prompt_path: ./src/PQAEF/tasks/longmemeval/long_mem_eval_prompt.txt
+data_dumper:
+  output_dir: ./output/test
+  file_prefix: longmemeval_results
+  chunk_size: 5000
+statistics_generator:
+  analyses_to_run:
+  - long_mem_eval

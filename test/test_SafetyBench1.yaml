@@ -1,0 +1,34 @@
+data_loaders:
+  SafetyBenchDataLoader:
+    class: SafetyBenchLoader
+    key_file: Ethics and Morality
+    paths:
+    - ./data/values/value/SafetyBench_json/dev_en.json
+    recursive: true
+    num: 300
+    formatter_name: SafetyBench1Formatter
+models:
+  openai_evaluator:
+    class: ApiModel
+    name: openai_evaluator
+    config:
+      provider: openai
+      model_identifier: YOUR_MODEL
+      api_key: YOUR_API_KEY
+      base_url: YOUR_BASE_URL
+      concurrency: 1
+tasks:
+- task_class: SingleChoiceTask
+  module_path: PQAEF.tasks.single_choice.single_choice_task
+  loader_names:
+  - SafetyBenchDataLoader
+  config:
+    llm_model_name: openai_evaluator
+    prompt_path: ./src/PQAEF/tasks/single_choice/prompt/SafetyBench.txt
+data_dumper:
+  output_dir: ./output/test
+  file_prefix: cped_annotated
+  chunk_size: 5000
+statistics_generator:
+  analyses_to_run:
+  - single_choice

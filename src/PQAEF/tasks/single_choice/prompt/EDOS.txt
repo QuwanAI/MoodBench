@@ -1,0 +1,8 @@
+Judge the emotional tendency based on the given text.
+
+{scene}
+
+Options:
+{options}
+
+Please carefully review the text content, determine the emotional orientation, and then select the most appropriate answer from the given options. You only need to answer the letter of the option (A, B, C, D...), without any explanation, punctuation, or other text:

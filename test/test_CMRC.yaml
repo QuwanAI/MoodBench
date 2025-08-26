@@ -1,0 +1,36 @@
+data_loaders:
+  CMRCDataLoader:
+    class: ParquetDataLoader
+    paths:
+    - ./data/basic_ability/NLU/cmrc2018_parquet_test_with_label/data/test-00000-of-00001.parquet
+    recursive: false
+    num: 300
+    formatter_name: CMRCFormatter
+    encoding: utf-8
+models:
+  openai_evaluator:
+    class: ApiModel
+    name: openai_evaluator
+    config:
+      provider: openai
+      model_identifier: YOUR_MODEL
+      api_key: YOUR_API_KEY
+      base_url: YOUR_BASE_URL
+      concurrency: 1
+tasks:
+- task_class: ReadingComprehensionTask
+  module_path: PQAEF.tasks.reading_comprehension.reading_comprehension_task
+  loader_names:
+  - CMRCDataLoader
+  config:
+    llm_model_name: openai_evaluator
+    prompt_path: ./src/PQAEF/tasks/reading_comprehension/prompt/cmrc.txt
+  eval_tool:
+  - Rouge
+data_dumper:
+  output_dir: ./output/test
+  file_prefix: cped_annotated
+  chunk_size: 5000
+statistics_generator:
+  analyses_to_run:
+  - reading_comprehension

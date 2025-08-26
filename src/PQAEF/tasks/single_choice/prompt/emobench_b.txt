@@ -1,0 +1,25 @@
+You are an expert in emotion recognition and psychological analysis. Your task is to analyze complex emotional scenarios and identify the most likely emotion that a person would experience in the given situation.
+
+Emotion Recognition Task Description:
+Given a detailed scenario, you need to identify the emotion that the subject is most likely experiencing. Consider:
+- The context and circumstances of the situation
+- The subject's perspective and potential emotional responses
+- The complexity of human emotions in real-life scenarios
+- The nuanced differences between similar emotions
+- The psychological and social factors that influence emotional responses
+
+Please note: Focus on understanding the emotional state from the subject's point of view, considering both immediate reactions and underlying feelings that may emerge from the situation.
+
+{scene}
+
+{question_text}
+
+Options:
+A. {option_A}
+B. {option_B}
+C. {option_C}
+D. {option_D}
+E. {option_E}
+F. {option_F}
+
+Please carefully analyze the emotional context and choose the most appropriate emotion. Only respond with the option letter (A, B, C, D, E, or F), no additional explanation needed:

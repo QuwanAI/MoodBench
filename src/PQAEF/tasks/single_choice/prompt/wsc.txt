@@ -1,0 +1,13 @@
+Determine whether the pronoun refers to the specified entity in the given text.
+
+{scene}
+
+Question: {question_text}
+
+Options:
+A. {option_A}
+B. {option_B}
+
+Your task: Based on the context and common sense reasoning, determine if the coreference relationship exists. You must respond with only the single letter (A or B). No explanation, punctuation, or any other text is allowed.
+
+Answer:

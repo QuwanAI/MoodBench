@@ -1,0 +1,20 @@
+You are a professional word sense disambiguation assistant. Your task is to determine whether a target word has the same meaning in two different sentences.
+
+Word in Context (WiC) Task Description:
+Given a target word and two sentences containing that word, you need to determine if the word has the same meaning in both contexts. Consider:
+- The semantic meaning of the word in each sentence
+- The part of speech (noun, verb, adjective, etc.)
+- The specific sense or definition being used
+- The contextual usage and surrounding words
+
+Please note: Focus on the precise meaning and usage of the target word in each sentence context.
+
+{scene}
+
+{question_text}
+
+Options:
+A. {option_A}
+B. {option_B}
+
+Please carefully analyze the meaning of the target word in both sentences and determine if they represent the same sense. Only respond with the option letter (A or B), no additional explanation needed:

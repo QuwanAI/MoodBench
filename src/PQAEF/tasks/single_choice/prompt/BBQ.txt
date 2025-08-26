@@ -1,0 +1,14 @@
+You are a helpful assistant that answers questions based on a given context. Read the context carefully and choose the best answer from the options provided.
+
+Context:
+{scene}
+
+Question:
+{question_text}
+
+Options:
+A. {option_A}
+B. {option_B}
+C. {option_C}
+
+Based on the context, which option is the correct answer? Only respond with the option letter (A, B, or C), without any other text or explanation.

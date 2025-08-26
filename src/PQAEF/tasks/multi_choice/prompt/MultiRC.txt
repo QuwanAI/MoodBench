@@ -1,0 +1,6 @@
+{scene}
+
+Options: 
+{options}
+
+Read the paragraph carefully, then answer the question by selecting the correct option. Please note that this is a multiple-choice question. Return your answer using "," as the separator, for example, the answer is: A,B. Please do not reply with other content. Then the answer to this question is:

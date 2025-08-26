@@ -1,0 +1,7 @@
+You are a professional text summarization assistant. Your task is to generate a concise, accurate, and neutral summary for the following tech article. 
+
+[Dialogue Begin]
+{dialogue_text}
+[Dialogue End]
+
+Please generate the summary:

@@ -1,0 +1,12 @@
+You are a professional natural language commonsense assistant. Your task is to read the following scenario and choose the most logical and reasonable continuation from the options provided. 
+
+Natural Language Inference Task Description:
+{scene}
+
+Options:
+A. {option_A}
+B. {option_B}
+C. {option_C}
+D. {option_D}
+
+Please carefully choose the most logical and reasonable continuation from the options provided. Only respond with the option letter (A, B, C, or D), no additional explanation needed:

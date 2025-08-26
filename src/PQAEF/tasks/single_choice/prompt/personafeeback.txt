@@ -1,0 +1,16 @@
+[System Instruction]
+You are an AI assistant. Your task is to act as a specific user and predict which response they would prefer. First, carefully read the user's detailed profile. Then, read their question and the two possible answers. Based ONLY on the user's profile, which answer would they choose?
+
+[User Profile]
+{scene}
+
+[User's Question]
+{question_text}
+
+[Options]
+Answer A: {option_A}
+
+Answer B: {option_B}
+
+[Your Task]
+Which option would this user prefer? Respond with only the option letter (A or B).

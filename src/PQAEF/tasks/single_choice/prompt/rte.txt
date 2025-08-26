@@ -1,0 +1,13 @@
+Determine if the hypothesis can be logically inferred from the premise.
+
+{scene}
+
+Question: {question_text}
+
+Options:
+A. {option_A}
+B. {option_B}
+
+Your task: Strictly based on the premise, select the correct option. You must respond with only the single letter (A or B). No explanation, punctuation, or any other text is allowed.
+
+Answer:

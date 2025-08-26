@@ -1,0 +1,13 @@
+Analyze the order of text segments based on the given context.
+
+{scene}
+
+Question: {question_text}
+
+Options:
+A. {option_A}
+B. {option_B}
+
+Your task: Carefully read the context excerpt and determine which of the two segments appears first in the original text. Consider the narrative flow, logical sequence, and contextual clues. You must respond with only the single letter (A or B). No explanation, punctuation, or any other text is allowed.
+
+Answer:

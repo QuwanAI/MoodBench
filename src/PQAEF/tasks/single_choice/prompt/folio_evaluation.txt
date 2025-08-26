@@ -1,0 +1,14 @@
+Task: Determine the logical relationship between the given premises and the conclusion using formal logical reasoning.
+
+{scene}
+
+{question_text}
+
+Options:
+A. {option_A}
+B. {option_B}
+C. {option_C}
+
+Your instruction: Analyze the logical relationship step by step. Your response must be only the single letter of the correct option (A, B, or C). Do not include any reasoning, punctuation, or extra text.
+
+Answer:

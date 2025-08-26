@@ -1,0 +1,34 @@
+data_loaders:
+  CPEDDataLoader:
+    class: CPEDDataLoader
+    paths:
+    - ./data/emo_ability/emo_recognition/CPED_txtcsv/test_split.csv
+    recursive: false
+    num: 300
+    formatter_name: cped_format
+    encoding: utf-8
+    skip_header: true
+models:
+  openai_evaluator:
+    class: ApiModel
+    name: openai_evaluator
+    config:
+      provider: openai
+      model_identifier: YOUR_MODEL
+      api_key: YOUR_API_KEY
+      base_url: YOUR_BASE_URL
+      concurrency: 1
+tasks:
+- task_class: CPEDPerplexityOnGeneratedResponseTask
+  module_path: PQAEF.tasks.auto_eval.perplexity_task
+  loader_names:
+  - CPEDDataLoader
+  config:
+    llm_model_name: openai_evaluator
+data_dumper:
+  output_dir: ./output/test
+  file_prefix: cped_annotated
+  chunk_size: 5000
+statistics_generator:
+  analyses_to_run:
+  - cped_analyzer

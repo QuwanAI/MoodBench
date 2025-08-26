@@ -1,0 +1,32 @@
+data_loaders:
+  liangbiaoDataLoader:
+    class: LiangbiaoLoader
+    paths:
+    - ./data/values/mental_health/liangbiao/data/meq/有效沟通测试.json
+    num: 300
+    formatter_name: liangbiao2Formatter
+models:
+  openai_evaluator:
+    class: ApiModel
+    name: openai_evaluator
+    config:
+      provider: openai
+      model_identifier: YOUR_MODEL
+      api_key: YOUR_API_KEY
+      base_url: YOUR_BASE_URL
+      concurrency: 1
+tasks:
+- task_class: LiangbiaoTask
+  module_path: PQAEF.tasks.liangbiao.liangbiao_task
+  loader_names:
+  - liangbiaoDataLoader
+  config:
+    llm_model_name: openai_evaluator
+    prompt_path: ./src/PQAEF/tasks/liangbiao/prompt/liangbiao.txt
+data_dumper:
+  output_dir: ./output/test
+  file_prefix: cped_annotated
+  chunk_size: 5000
+statistics_generator:
+  analyses_to_run:
+  - liangbiao

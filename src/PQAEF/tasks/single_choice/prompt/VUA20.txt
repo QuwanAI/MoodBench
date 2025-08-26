@@ -1,0 +1,8 @@
+{scene}
+
+Question: {question_text}
+
+A. Yes (metaphorical use)
+B. No (non-metaphorical use)
+
+Please only return the option letter (A or B) as your answer, without any explanation, punctuation, or other text:

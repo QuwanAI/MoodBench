@@ -1,0 +1,12 @@
+You are a professional natural language processing assistant. 
+
+SemEval task:
+Is the following text ironic?
+
+{scene}
+
+
+Options:
+{options}
+
+You only need to answer the letter of the option (A or B), without any explanation, punctuation, or other text:

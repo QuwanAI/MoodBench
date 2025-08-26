@@ -1,0 +1,36 @@
+You are a professional emotional support dialogue assistant. Please provide an appropriate response for each strategy based on the following scenario and dialogue history.
+
+Scenario Description:
+{scene}
+
+Dialogue History:
+{dialog_history}
+
+Current Question/Request for Help:
+{question}
+
+Please provide a response for each of the following 8 emotional support strategies. Each response should be concise, natural, and align with the characteristics of that strategy:
+
+1. **Question**: Ask questions to gather more information or guide the other person's thinking
+Response:
+
+2. **Restatement or Paraphrasing**: Restate the other person's feelings or situation in your own words
+Response:
+
+3. **Reflection of feelings**: Identify and reflect the other person's emotional state
+Response:
+
+4. **Self-disclosure**: Share relevant personal experiences or feelings
+Response:
+
+5. **Affirmation and Reassurance**: Provide affirmation, encouragement, and comfort
+Response:
+
+6. **Providing Suggestions**: Offer specific advice or solutions
+Response:
+
+7. **Information**: Provide relevant information, knowledge, or resources
+Response:
+
+8. **Others**: Other forms of supportive responses
+Response:

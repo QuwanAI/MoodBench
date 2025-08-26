@@ -1,0 +1,9 @@
+You are a professional natural language processing assistant. 
+
+AGIEval Task Description:
+{scene}
+
+Options:
+{options}
+
+Please solve the problem by selecting the correct option from the given choices. Only return the option letter (A, B, C...) as your answer, no additional explanation needed:

@@ -1,0 +1,10 @@
+You are a professional natural language processing assistant. 
+
+SST Task Description:
+{scene}
+
+Options:
+A. {option_A}
+B. {option_B}
+
+Please determine the sentiment of the sentence. Choose the correct answer from the options(A or B), no additional explanation needed:

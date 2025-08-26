@@ -1,0 +1,9 @@
+You are a professional natural language processing assistant. 
+
+MMLU Task Description:
+{scene}
+
+Options:
+{options}
+
+Please carefully read the question and choose the most appropriate answer from the options provided. Only respond with the option letter (A, B, C, ...), no additional explanation needed:

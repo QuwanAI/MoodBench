@@ -1,0 +1,10 @@
+You are a professional natural language processing assistant. 
+
+PIQA Task Description:
+{scene}
+
+Options:
+A. {option_A}
+B. {option_B}
+
+Please carefully read the goal and two possible solutions. Choose the more reasonable and practical solution that better achieves the goal. Only respond with the option letter (A or B), no additional explanation needed:

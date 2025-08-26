@@ -1,0 +1,27 @@
+You are an expert in emotion analysis and psychological reasoning. Your task is to identify the most likely cause of a specific emotion in a given scenario.
+
+Emotion Cause Recognition Task Description:
+Given a detailed scenario and an observed emotion, you need to determine what most likely caused that emotion. Consider:
+- The sequence of events in the scenario
+- The psychological factors that trigger specific emotions
+- The relationship between actions, outcomes, and emotional responses
+- The subject's perspective and how they might interpret the situation
+- The social and contextual factors that influence emotional reactions
+
+Please note: Focus on identifying the primary causal factor that would most directly lead to the observed emotion, considering both immediate triggers and underlying psychological mechanisms.
+
+{scene}
+
+{question_text}
+
+Options:
+A. {option_A}
+B. {option_B}
+C. {option_C}
+D. {option_D}
+E. {option_E}
+F. {option_F}
+G. {option_G}
+H. {option_H}
+
+Please carefully analyze the causal relationship between the scenario events and the observed emotion. Choose the most appropriate cause. Only respond with the option letter (A, B, C, D, E, F, G, or H), no additional explanation needed:

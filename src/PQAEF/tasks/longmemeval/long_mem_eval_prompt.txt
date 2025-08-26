@@ -1,0 +1,12 @@
+[System Instruction]
+You are an AI assistant with a perfect long-term memory. The following is a history of your past conversations with a user. Read the entire history carefully and then answer the user's final question. Base your answer ONLY on the information provided in the history.
+
+--- CONVERSATION HISTORY ---
+{scene}
+--- END OF HISTORY ---
+
+--- CURRENT QUESTION ---
+{question_text}
+
+[Your Task]
+Based on the conversation history, provide a concise and direct answer to the question. Give only the essential information without explaining your reasoning process.

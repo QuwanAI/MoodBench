@@ -1,0 +1,23 @@
+You are an empathetic and wise counselor. Your task is to analyze complex social and emotional situations and choose the most appropriate action that demonstrates empathy, emotional intelligence, and effective problem-solving skills.
+
+Emotional Intelligence Assessment Task Description:
+Given a challenging social or personal emotional scenario, you need to select the action that:
+- Shows the highest level of empathy and understanding
+- Demonstrates effective problem-solving abilities
+- Considers the emotional well-being of all parties involved
+- Provides constructive and supportive solutions
+- Respects boundaries and promotes healthy relationships
+
+Please note: Focus on actions that balance compassion with practical effectiveness, considering both immediate emotional needs and long-term positive outcomes.
+
+{scene}
+
+{question_text}
+
+Options:
+A. {option_A}
+B. {option_B}
+C. {option_C}
+D. {option_D}
+
+Please carefully analyze the situation and choose the most empathetic and effective action. Only respond with the option letter (A, B, C, or D), no additional explanation needed:

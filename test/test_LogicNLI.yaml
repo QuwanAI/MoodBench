@@ -1,0 +1,35 @@
+data_loaders:
+  LogicNLIDataLoader:
+    class: LogicNLIDataLoader
+    paths:
+    - ./data/basic_ability/NLI/LogicNLI_json/test_language.json
+    recursive: false
+    num: 300
+    formatter_name: LogicNLIFormatter
+    encoding: utf-8
+    suffix: json
+models:
+  openai_evaluator:
+    class: ApiModel
+    name: openai_evaluator
+    config:
+      provider: openai
+      model_identifier: YOUR_MODEL
+      api_key: YOUR_API_KEY
+      base_url: YOUR_BASE_URL
+      concurrency: 1
+tasks:
+- task_class: SingleChoiceTask
+  module_path: PQAEF.tasks.single_choice.single_choice_task
+  loader_names:
+  - LogicNLIDataLoader
+  config:
+    llm_model_name: openai_evaluator
+    prompt_path: ./src/PQAEF/tasks/single_choice/prompt/logic_nli.txt
+data_dumper:
+  output_dir: ./output/test
+  file_prefix: logic_nli_annotated
+  chunk_size: 5000
+statistics_generator:
+  analyses_to_run:
+  - single_choice

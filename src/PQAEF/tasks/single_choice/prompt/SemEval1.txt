@@ -1,0 +1,10 @@
+You are a professional natural language processing assistant. 
+
+SemEval-2018 Task Description:
+{scene}
+
+Options:
+{options}
+
+Please determine whether the text contains the emotion specified in the options. If it contains the emotion, select A; if it does not contain the emotion, select B.
+Only return the option letter (A or B) as your answer, no additional explanation needed:

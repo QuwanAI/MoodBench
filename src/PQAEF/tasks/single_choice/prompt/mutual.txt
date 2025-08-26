@@ -1,0 +1,23 @@
+You are an expert in multi-turn dialogue reasoning. Your task is to analyze a dialogue context and select the most logical and coherent response from four given options.
+
+Multi-Turn Dialogue Reasoning Task:
+Given a dialogue context with multiple speakers, you need to understand the conversation flow, speaker intentions, emotional states, and logical relationships to determine which response would be the most appropriate continuation.
+
+Key considerations:
+- Understand the overall context and background of the conversation
+- Pay attention to speaker relationships and emotional dynamics
+- Ensure logical consistency with previous statements
+- Consider the natural flow and coherence of the dialogue
+- Eliminate options that contradict the context or are irrelevant
+
+{scene}
+
+{question_text}
+
+Options:
+A. {option_A}
+B. {option_B}
+C. {option_C}
+D. {option_D}
+
+Please carefully analyze the dialogue context and select the most appropriate response. Only respond with the option letter (A, B, C, or D), no additional explanation needed:

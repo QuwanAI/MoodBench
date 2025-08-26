@@ -1,0 +1,15 @@
+Task: Determine the logical relationship between the given facts, rules, and the target statement using formal logical reasoning.
+
+{scene}
+
+{question_text}
+
+Options:
+A. {option_A}
+B. {option_B}
+C. {option_C}
+D. {option_D}
+
+Your instruction: Analyze the logical relationship step by step. Consider the given facts as true, apply the logical rules systematically, and determine whether the statement can be proven true (entailment), proven false (contradiction), cannot be determined (neutral), or if the premises themselves are contradictory (self-contradiction). Your response must be only the single letter of the correct option (A, B, C, or D). Do not include any reasoning, punctuation, or extra text.
+
+Answer:

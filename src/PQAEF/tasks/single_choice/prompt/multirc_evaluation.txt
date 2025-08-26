@@ -1,0 +1,21 @@
+You are a reading comprehension expert. Your task is to determine whether a candidate answer is correct for a given question based on the provided passage.
+
+Please carefully read the passage and question, then evaluate whether the candidate answer is supported by the information in the passage and correctly answers the question.
+
+Instructions:
+- Base your judgment strictly on the information provided in the passage
+- Consider whether the candidate answer is factually correct according to the passage
+- Consider whether the candidate answer directly addresses the question being asked
+- Even if the candidate answer contains some correct information, it should be marked as incorrect if it doesn't properly answer the specific question
+
+{scene}
+
+{question_text}
+
+Options:
+A. {option_A}
+B. {option_B}
+
+Your task: Based strictly on the passage, determine whether the candidate answer is correct. You must respond with only the single letter (A or B). No explanation, punctuation, or any other text is allowed.
+
+Answer:
