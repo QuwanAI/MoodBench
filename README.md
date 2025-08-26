@@ -16,7 +16,7 @@
    Bash
 
    ```
-   git clone https://github.com/QuwanAI/MoodBench
+   git clone https://github.com/QuwanAI/MoodBench.git
    cd /path/to/MoodBench
    ```
 
