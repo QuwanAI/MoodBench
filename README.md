@@ -5,7 +5,7 @@
 
 为了能够科学、系统地评估大语言模型的情感陪伴能力，**趣丸科技&北京大学-软件工程国家工程研究中心**联合推出了MoodBench评测基准。
 
-我们严格基于[PQAEF](https://github.com/QuwanAI/PQAEF) 框架的“四维”理念（能力 -> 三级任务 -> 数据 -> 方法），对我们选取的一系列数据集进行了适配，数据集介绍见`./data/dataset_intro.md`，如果你想测评垂域社交场景大语言模型的情感能力，相信MoodBench都能让这个过程变得轻而易举。
+我们严格基于[PQAEF](https://github.com/QuwanAI/PQAEF) 框架的“四维”理念（能力 -> 三级任务 -> 数据 -> 方法），对我们选取的一系列数据集进行了适配，如果你想测评垂域社交场景大语言模型的情感能力，相信MoodBench都能让这个过程变得轻而易举。
 
 ## 🛠️ 快速上手
 
@@ -17,7 +17,7 @@
 
    ```
    git clone https://github.com/QuwanAI/MoodBench
-   cd /path/to/PQAEF
+   cd /path/to/MoodBench
    ```
 
 2. ### 配置环境 ⚙️
