@@ -1,0 +1,987 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Model Evaluation Report - L2 能力名称</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; margin: 40px; }
+        h1 { color: #333; }
+        .report-links { margin-bottom: 25px; font-size: 1.1em; }
+        .report-links a { margin-right: 15px; text-decoration: none; color: #007bff; }
+        .report-links a.active { font-weight: bold; color: #000; text-decoration: underline; }
+        table { border-collapse: collapse; width: 100%; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        th, td { border: 1px solid #e0e0e0; padding: 12px 15px; text-align: left; vertical-align: middle; }
+        th { background-color: #f8f8f8; font-weight: 600; }
+        tr:nth-child(even) { background-color: #fdfdfd; }
+        tr:hover { background-color: #f5f5f5; }
+        .score-cell { text-align: right; font-weight: 500; font-family: "Menlo", "Consolas", monospace; }
+        .score-na { color: #aaa; }
+        .rank-1 { background-color: #ffd700 !important; font-weight: bold; color: #333; }
+        .rank-2 { background-color: #c0c0c0 !important; font-weight: bold; color: #333; }
+    </style>
+</head>
+<body>
+    <h1>Model Evaluation Report - L2 能力名称</h1>
+    <div class="report-links">
+        <a href="report_level_1.html" class="">L1 能力维度</a>
+        <a href="report_level_2.html" class="active">L2 能力名称</a>
+        <a href="report_level_3.html" class="">L3 任务难度</a>
+        <a href="report_level_4.html" class="">L4 评价任务</a>
+        <a href="report_level_5_datasets.html" class="">L5 数据集</a>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                
+                <th>能力维度</th>
+                
+                <th>能力名称</th>
+                
+                <th>Baichuan2-turbo</th>
+                
+                <th>Baichuan4-Air</th>
+                
+                <th>abab6.5t-chat</th>
+                
+                <th>claude-3-opus-20240229</th>
+                
+                <th>claude-3-sonnet-20240229</th>
+                
+                <th>claude-opus-4-20250514</th>
+                
+                <th>doubao-1-5-pro-32k-character-250228</th>
+                
+                <th>doubao-1.5-pro-32k-character-250715</th>
+                
+                <th>doubao-pro-32k-241215</th>
+                
+                <th>doubao-seed-1-6-flash-250615</th>
+                
+                <th>ernie-4.5-21b-a3b</th>
+                
+                <th>gemini-1.5-flash-002</th>
+                
+                <th>gemini-2.0-flash</th>
+                
+                <th>glm-4-9b</th>
+                
+                <th>glm-4-flash</th>
+                
+                <th>glm-4v-plus</th>
+                
+                <th>gpt-4-turbo</th>
+                
+                <th>gpt-4.1-2025-04-14</th>
+                
+                <th>gpt-4o</th>
+                
+                <th>gpt-4o-mini</th>
+                
+                <th>qwen-long</th>
+                
+                <th>qwen-max</th>
+                
+                <th>qwen-omni-turbo</th>
+                
+                <th>qwen-plus</th>
+                
+                <th>qwen1.5-14b-chat</th>
+                
+                <th>qwen2.5-72b-instruct</th>
+                
+                <th>qwen2.5-7b-instruct</th>
+                
+                <th>qwen3-0.6b</th>
+                
+                <th>qwen3-14b</th>
+                
+                <th>qwen3-32b</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                
+                <td rowspan="4">基础能力</td>
+                
+                <td rowspan="1">自然语言理解</td>
+                
+                
+                <td class="score-cell ">72.61</td>
+                
+                <td class="score-cell ">71.26</td>
+                
+                <td class="score-cell ">42.52</td>
+                
+                <td class="score-cell ">58.12</td>
+                
+                <td class="score-cell ">70.71</td>
+                
+                <td class="score-cell ">68.35</td>
+                
+                <td class="score-cell ">78.03</td>
+                
+                <td class="score-cell ">76.04</td>
+                
+                <td class="score-cell ">78.60</td>
+                
+                <td class="score-cell ">76.18</td>
+                
+                <td class="score-cell ">72.98</td>
+                
+                <td class="score-cell ">73.92</td>
+                
+                <td class="score-cell ">74.20</td>
+                
+                <td class="score-cell ">73.24</td>
+                
+                <td class="score-cell ">71.40</td>
+                
+                <td class="score-cell ">74.20</td>
+                
+                <td class="score-cell ">77.65</td>
+                
+                <td class="score-cell  rank-1">79.46</td>
+                
+                <td class="score-cell ">78.69</td>
+                
+                <td class="score-cell ">73.74</td>
+                
+                <td class="score-cell ">75.44</td>
+                
+                <td class="score-cell  rank-2">79.17</td>
+                
+                <td class="score-cell ">55.26</td>
+                
+                <td class="score-cell ">76.00</td>
+                
+                <td class="score-cell ">69.19</td>
+                
+                <td class="score-cell ">77.77</td>
+                
+                <td class="score-cell ">70.76</td>
+                
+                <td class="score-cell ">50.12</td>
+                
+                <td class="score-cell ">73.83</td>
+                
+                <td class="score-cell ">74.27</td>
+                
+            </tr>
+            
+            <tr>
+                
+                <td rowspan="1">自然语言推理</td>
+                
+                
+                <td class="score-cell ">75.33</td>
+                
+                <td class="score-cell ">74.55</td>
+                
+                <td class="score-cell ">36.20</td>
+                
+                <td class="score-cell ">71.85</td>
+                
+                <td class="score-cell ">81.61</td>
+                
+                <td class="score-cell  rank-2">82.03</td>
+                
+                <td class="score-cell  rank-1">82.15</td>
+                
+                <td class="score-cell ">80.44</td>
+                
+                <td class="score-cell ">81.62</td>
+                
+                <td class="score-cell ">79.16</td>
+                
+                <td class="score-cell ">66.33</td>
+                
+                <td class="score-cell ">70.73</td>
+                
+                <td class="score-cell ">74.91</td>
+                
+                <td class="score-cell ">65.18</td>
+                
+                <td class="score-cell ">65.12</td>
+                
+                <td class="score-cell ">74.53</td>
+                
+                <td class="score-cell ">79.16</td>
+                
+                <td class="score-cell ">80.38</td>
+                
+                <td class="score-cell ">76.69</td>
+                
+                <td class="score-cell ">73.32</td>
+                
+                <td class="score-cell ">78.51</td>
+                
+                <td class="score-cell ">80.65</td>
+                
+                <td class="score-cell ">49.83</td>
+                
+                <td class="score-cell ">78.73</td>
+                
+                <td class="score-cell ">64.91</td>
+                
+                <td class="score-cell ">79.36</td>
+                
+                <td class="score-cell ">66.90</td>
+                
+                <td class="score-cell ">36.53</td>
+                
+                <td class="score-cell ">71.99</td>
+                
+                <td class="score-cell ">73.73</td>
+                
+            </tr>
+            
+            <tr>
+                
+                <td rowspan="1">自然语言生成</td>
+                
+                
+                <td class="score-cell ">25.54</td>
+                
+                <td class="score-cell ">25.72</td>
+                
+                <td class="score-cell ">24.90</td>
+                
+                <td class="score-cell ">21.77</td>
+                
+                <td class="score-cell ">21.46</td>
+                
+                <td class="score-cell ">21.66</td>
+                
+                <td class="score-cell  rank-2">29.39</td>
+                
+                <td class="score-cell ">28.46</td>
+                
+                <td class="score-cell ">27.57</td>
+                
+                <td class="score-cell ">28.59</td>
+                
+                <td class="score-cell ">28.70</td>
+                
+                <td class="score-cell ">28.20</td>
+                
+                <td class="score-cell  rank-1">29.76</td>
+                
+                <td class="score-cell ">28.20</td>
+                
+                <td class="score-cell ">27.75</td>
+                
+                <td class="score-cell ">28.10</td>
+                
+                <td class="score-cell ">27.19</td>
+                
+                <td class="score-cell ">27.33</td>
+                
+                <td class="score-cell ">25.84</td>
+                
+                <td class="score-cell ">26.80</td>
+                
+                <td class="score-cell ">25.72</td>
+                
+                <td class="score-cell ">26.30</td>
+                
+                <td class="score-cell ">24.29</td>
+                
+                <td class="score-cell ">26.18</td>
+                
+                <td class="score-cell ">24.29</td>
+                
+                <td class="score-cell ">25.16</td>
+                
+                <td class="score-cell ">26.83</td>
+                
+                <td class="score-cell ">26.36</td>
+                
+                <td class="score-cell ">26.46</td>
+                
+                <td class="score-cell ">26.34</td>
+                
+            </tr>
+            
+            <tr>
+                
+                <td rowspan="1">常识能力</td>
+                
+                
+                <td class="score-cell ">71.09</td>
+                
+                <td class="score-cell ">70.86</td>
+                
+                <td class="score-cell ">29.34</td>
+                
+                <td class="score-cell ">55.39</td>
+                
+                <td class="score-cell  rank-1">80.84</td>
+                
+                <td class="score-cell ">72.71</td>
+                
+                <td class="score-cell ">76.25</td>
+                
+                <td class="score-cell ">75.98</td>
+                
+                <td class="score-cell ">76.50</td>
+                
+                <td class="score-cell ">71.67</td>
+                
+                <td class="score-cell ">66.12</td>
+                
+                <td class="score-cell ">64.35</td>
+                
+                <td class="score-cell ">73.97</td>
+                
+                <td class="score-cell ">61.74</td>
+                
+                <td class="score-cell ">60.84</td>
+                
+                <td class="score-cell ">64.99</td>
+                
+                <td class="score-cell ">68.75</td>
+                
+                <td class="score-cell ">76.14</td>
+                
+                <td class="score-cell ">74.36</td>
+                
+                <td class="score-cell ">65.33</td>
+                
+                <td class="score-cell ">76.03</td>
+                
+                <td class="score-cell ">76.48</td>
+                
+                <td class="score-cell ">46.45</td>
+                
+                <td class="score-cell  rank-2">76.84</td>
+                
+                <td class="score-cell ">61.49</td>
+                
+                <td class="score-cell ">73.37</td>
+                
+                <td class="score-cell ">63.44</td>
+                
+                <td class="score-cell ">26.98</td>
+                
+                <td class="score-cell ">68.46</td>
+                
+                <td class="score-cell ">73.76</td>
+                
+            </tr>
+            
+            <tr>
+                
+                <td rowspan="5">情感能力</td>
+                
+                <td rowspan="1">情感识别</td>
+                
+                
+                <td class="score-cell ">65.80</td>
+                
+                <td class="score-cell ">65.35</td>
+                
+                <td class="score-cell ">33.54</td>
+                
+                <td class="score-cell ">46.16</td>
+                
+                <td class="score-cell ">61.01</td>
+                
+                <td class="score-cell ">62.37</td>
+                
+                <td class="score-cell ">66.30</td>
+                
+                <td class="score-cell  rank-2">68.16</td>
+                
+                <td class="score-cell  rank-1">70.52</td>
+                
+                <td class="score-cell ">67.26</td>
+                
+                <td class="score-cell ">61.11</td>
+                
+                <td class="score-cell ">57.57</td>
+                
+                <td class="score-cell ">65.84</td>
+                
+                <td class="score-cell ">58.02</td>
+                
+                <td class="score-cell ">57.75</td>
+                
+                <td class="score-cell ">64.66</td>
+                
+                <td class="score-cell ">67.61</td>
+                
+                <td class="score-cell ">66.19</td>
+                
+                <td class="score-cell ">63.57</td>
+                
+                <td class="score-cell ">65.94</td>
+                
+                <td class="score-cell ">66.49</td>
+                
+                <td class="score-cell ">64.09</td>
+                
+                <td class="score-cell ">47.59</td>
+                
+                <td class="score-cell ">65.28</td>
+                
+                <td class="score-cell ">59.71</td>
+                
+                <td class="score-cell ">64.81</td>
+                
+                <td class="score-cell ">63.36</td>
+                
+                <td class="score-cell ">40.11</td>
+                
+                <td class="score-cell ">63.87</td>
+                
+                <td class="score-cell ">64.18</td>
+                
+            </tr>
+            
+            <tr>
+                
+                <td rowspan="1">情感理解</td>
+                
+                
+                <td class="score-cell ">85.87</td>
+                
+                <td class="score-cell ">85.73</td>
+                
+                <td class="score-cell ">42.17</td>
+                
+                <td class="score-cell ">70.03</td>
+                
+                <td class="score-cell  rank-1">88.80</td>
+                
+                <td class="score-cell ">86.83</td>
+                
+                <td class="score-cell ">85.10</td>
+                
+                <td class="score-cell ">83.10</td>
+                
+                <td class="score-cell  rank-2">88.20</td>
+                
+                <td class="score-cell ">87.13</td>
+                
+                <td class="score-cell ">74.47</td>
+                
+                <td class="score-cell ">81.57</td>
+                
+                <td class="score-cell ">81.73</td>
+                
+                <td class="score-cell ">79.57</td>
+                
+                <td class="score-cell ">77.83</td>
+                
+                <td class="score-cell ">78.33</td>
+                
+                <td class="score-cell ">87.33</td>
+                
+                <td class="score-cell ">83.90</td>
+                
+                <td class="score-cell ">85.33</td>
+                
+                <td class="score-cell ">82.53</td>
+                
+                <td class="score-cell ">85.93</td>
+                
+                <td class="score-cell ">85.10</td>
+                
+                <td class="score-cell ">60.83</td>
+                
+                <td class="score-cell ">82.70</td>
+                
+                <td class="score-cell ">76.47</td>
+                
+                <td class="score-cell ">84.83</td>
+                
+                <td class="score-cell ">81.30</td>
+                
+                <td class="score-cell ">43.33</td>
+                
+                <td class="score-cell ">82.77</td>
+                
+                <td class="score-cell ">82.17</td>
+                
+            </tr>
+            
+            <tr>
+                
+                <td rowspan="1">情感管理</td>
+                
+                
+                <td class="score-cell ">56.67</td>
+                
+                <td class="score-cell ">57.00</td>
+                
+                <td class="score-cell ">35.67</td>
+                
+                <td class="score-cell ">39.67</td>
+                
+                <td class="score-cell ">53.00</td>
+                
+                <td class="score-cell ">57.33</td>
+                
+                <td class="score-cell ">53.67</td>
+                
+                <td class="score-cell ">53.67</td>
+                
+                <td class="score-cell ">55.00</td>
+                
+                <td class="score-cell ">49.33</td>
+                
+                <td class="score-cell ">48.00</td>
+                
+                <td class="score-cell ">54.00</td>
+                
+                <td class="score-cell ">57.00</td>
+                
+                <td class="score-cell ">57.67</td>
+                
+                <td class="score-cell ">54.00</td>
+                
+                <td class="score-cell ">54.00</td>
+                
+                <td class="score-cell ">51.67</td>
+                
+                <td class="score-cell ">55.33</td>
+                
+                <td class="score-cell ">53.33</td>
+                
+                <td class="score-cell ">53.00</td>
+                
+                <td class="score-cell ">54.00</td>
+                
+                <td class="score-cell ">53.67</td>
+                
+                <td class="score-cell ">36.00</td>
+                
+                <td class="score-cell ">56.67</td>
+                
+                <td class="score-cell ">45.33</td>
+                
+                <td class="score-cell  rank-2">58.33</td>
+                
+                <td class="score-cell ">57.67</td>
+                
+                <td class="score-cell ">12.67</td>
+                
+                <td class="score-cell ">50.33</td>
+                
+                <td class="score-cell  rank-1">59.00</td>
+                
+            </tr>
+            
+            <tr>
+                
+                <td rowspan="1">情感回复</td>
+                
+                
+                <td class="score-cell ">50.68</td>
+                
+                <td class="score-cell ">51.35</td>
+                
+                <td class="score-cell ">27.65</td>
+                
+                <td class="score-cell ">35.17</td>
+                
+                <td class="score-cell ">49.00</td>
+                
+                <td class="score-cell  rank-1">53.42</td>
+                
+                <td class="score-cell ">48.42</td>
+                
+                <td class="score-cell ">50.37</td>
+                
+                <td class="score-cell ">50.68</td>
+                
+                <td class="score-cell ">48.73</td>
+                
+                <td class="score-cell ">46.12</td>
+                
+                <td class="score-cell ">46.05</td>
+                
+                <td class="score-cell ">47.57</td>
+                
+                <td class="score-cell ">47.33</td>
+                
+                <td class="score-cell ">47.62</td>
+                
+                <td class="score-cell ">50.02</td>
+                
+                <td class="score-cell ">50.58</td>
+                
+                <td class="score-cell  rank-2">51.67</td>
+                
+                <td class="score-cell ">49.68</td>
+                
+                <td class="score-cell ">48.12</td>
+                
+                <td class="score-cell ">48.53</td>
+                
+                <td class="score-cell ">48.10</td>
+                
+                <td class="score-cell ">37.63</td>
+                
+                <td class="score-cell ">49.73</td>
+                
+                <td class="score-cell ">42.95</td>
+                
+                <td class="score-cell ">50.10</td>
+                
+                <td class="score-cell ">47.82</td>
+                
+                <td class="score-cell ">26.43</td>
+                
+                <td class="score-cell ">50.58</td>
+                
+                <td class="score-cell ">47.63</td>
+                
+            </tr>
+            
+            <tr>
+                
+                <td rowspan="1">综合情感智能</td>
+                
+                
+                <td class="score-cell  rank-2">74.31</td>
+                
+                <td class="score-cell ">72.28</td>
+                
+                <td class="score-cell ">45.78</td>
+                
+                <td class="score-cell ">53.31</td>
+                
+                <td class="score-cell ">71.34</td>
+                
+                <td class="score-cell ">73.06</td>
+                
+                <td class="score-cell ">65.59</td>
+                
+                <td class="score-cell ">68.34</td>
+                
+                <td class="score-cell ">61.22</td>
+                
+                <td class="score-cell ">69.41</td>
+                
+                <td class="score-cell ">63.69</td>
+                
+                <td class="score-cell ">59.38</td>
+                
+                <td class="score-cell ">53.53</td>
+                
+                <td class="score-cell ">65.91</td>
+                
+                <td class="score-cell ">62.50</td>
+                
+                <td class="score-cell ">56.65</td>
+                
+                <td class="score-cell ">56.78</td>
+                
+                <td class="score-cell ">58.09</td>
+                
+                <td class="score-cell  rank-1">85.47</td>
+                
+                <td class="score-cell ">64.50</td>
+                
+                <td class="score-cell ">68.72</td>
+                
+                <td class="score-cell ">61.69</td>
+                
+                <td class="score-cell ">61.12</td>
+                
+                <td class="score-cell ">64.66</td>
+                
+                <td class="score-cell ">65.28</td>
+                
+                <td class="score-cell ">66.06</td>
+                
+                <td class="score-cell ">73.18</td>
+                
+                <td class="score-cell ">68.88</td>
+                
+                <td class="score-cell ">58.32</td>
+                
+                <td class="score-cell ">72.72</td>
+                
+            </tr>
+            
+            <tr>
+                
+                <td rowspan="2">陪伴能力</td>
+                
+                <td rowspan="1">记忆管理能力</td>
+                
+                
+                <td class="score-cell ">41.85</td>
+                
+                <td class="score-cell ">45.20</td>
+                
+                <td class="score-cell ">43.15</td>
+                
+                <td class="score-cell ">40.20</td>
+                
+                <td class="score-cell  rank-1">54.01</td>
+                
+                <td class="score-cell  rank-2">53.23</td>
+                
+                <td class="score-cell ">49.33</td>
+                
+                <td class="score-cell ">48.01</td>
+                
+                <td class="score-cell ">51.41</td>
+                
+                <td class="score-cell ">49.31</td>
+                
+                <td class="score-cell ">48.55</td>
+                
+                <td class="score-cell ">40.64</td>
+                
+                <td class="score-cell ">50.14</td>
+                
+                <td class="score-cell ">51.07</td>
+                
+                <td class="score-cell ">47.58</td>
+                
+                <td class="score-cell ">46.92</td>
+                
+                <td class="score-cell ">43.48</td>
+                
+                <td class="score-cell ">51.66</td>
+                
+                <td class="score-cell ">47.78</td>
+                
+                <td class="score-cell ">32.13</td>
+                
+                <td class="score-cell ">48.05</td>
+                
+                <td class="score-cell ">48.90</td>
+                
+                <td class="score-cell ">30.38</td>
+                
+                <td class="score-cell ">31.20</td>
+                
+                <td class="score-cell ">39.02</td>
+                
+                <td class="score-cell ">46.78</td>
+                
+                <td class="score-cell ">47.42</td>
+                
+                <td class="score-cell ">36.12</td>
+                
+                <td class="score-cell ">46.89</td>
+                
+                <td class="score-cell ">50.69</td>
+                
+            </tr>
+            
+            <tr>
+                
+                <td rowspan="1">个性化能力</td>
+                
+                
+                <td class="score-cell  rank-1">49.33</td>
+                
+                <td class="score-cell ">46.40</td>
+                
+                <td class="score-cell ">20.67</td>
+                
+                <td class="score-cell ">25.27</td>
+                
+                <td class="score-cell ">32.00</td>
+                
+                <td class="score-cell ">29.07</td>
+                
+                <td class="score-cell ">47.07</td>
+                
+                <td class="score-cell ">47.00</td>
+                
+                <td class="score-cell  rank-2">48.40</td>
+                
+                <td class="score-cell ">43.73</td>
+                
+                <td class="score-cell ">45.13</td>
+                
+                <td class="score-cell ">42.53</td>
+                
+                <td class="score-cell ">41.73</td>
+                
+                <td class="score-cell ">37.80</td>
+                
+                <td class="score-cell ">42.67</td>
+                
+                <td class="score-cell ">42.73</td>
+                
+                <td class="score-cell ">43.07</td>
+                
+                <td class="score-cell ">45.27</td>
+                
+                <td class="score-cell ">43.87</td>
+                
+                <td class="score-cell ">43.73</td>
+                
+                <td class="score-cell ">46.40</td>
+                
+                <td class="score-cell ">43.00</td>
+                
+                <td class="score-cell ">26.27</td>
+                
+                <td class="score-cell ">45.60</td>
+                
+                <td class="score-cell ">37.60</td>
+                
+                <td class="score-cell ">46.00</td>
+                
+                <td class="score-cell ">38.60</td>
+                
+                <td class="score-cell ">25.33</td>
+                
+                <td class="score-cell ">45.13</td>
+                
+                <td class="score-cell ">40.93</td>
+                
+            </tr>
+            
+            <tr>
+                
+                <td rowspan="2">价值观与安全</td>
+                
+                <td rowspan="1">价值观</td>
+                
+                
+                <td class="score-cell ">77.23</td>
+                
+                <td class="score-cell ">77.20</td>
+                
+                <td class="score-cell ">30.27</td>
+                
+                <td class="score-cell ">87.87</td>
+                
+                <td class="score-cell ">84.17</td>
+                
+                <td class="score-cell ">73.63</td>
+                
+                <td class="score-cell ">94.13</td>
+                
+                <td class="score-cell ">93.93</td>
+                
+                <td class="score-cell ">92.67</td>
+                
+                <td class="score-cell ">92.87</td>
+                
+                <td class="score-cell ">88.47</td>
+                
+                <td class="score-cell ">92.00</td>
+                
+                <td class="score-cell ">93.03</td>
+                
+                <td class="score-cell ">79.37</td>
+                
+                <td class="score-cell ">76.93</td>
+                
+                <td class="score-cell ">82.23</td>
+                
+                <td class="score-cell ">94.93</td>
+                
+                <td class="score-cell  rank-2">94.97</td>
+                
+                <td class="score-cell ">94.03</td>
+                
+                <td class="score-cell ">93.17</td>
+                
+                <td class="score-cell ">92.83</td>
+                
+                <td class="score-cell  rank-1">95.20</td>
+                
+                <td class="score-cell ">72.73</td>
+                
+                <td class="score-cell ">92.83</td>
+                
+                <td class="score-cell ">89.33</td>
+                
+                <td class="score-cell ">92.10</td>
+                
+                <td class="score-cell ">84.27</td>
+                
+                <td class="score-cell ">49.07</td>
+                
+                <td class="score-cell ">90.30</td>
+                
+                <td class="score-cell ">91.00</td>
+                
+            </tr>
+            
+            <tr>
+                
+                <td rowspan="1">安全</td>
+                
+                
+                <td class="score-cell ">88.00</td>
+                
+                <td class="score-cell ">88.00</td>
+                
+                <td class="score-cell ">28.00</td>
+                
+                <td class="score-cell ">84.00</td>
+                
+                <td class="score-cell ">82.00</td>
+                
+                <td class="score-cell ">68.00</td>
+                
+                <td class="score-cell ">92.00</td>
+                
+                <td class="score-cell ">88.00</td>
+                
+                <td class="score-cell  rank-1">100.00</td>
+                
+                <td class="score-cell ">90.00</td>
+                
+                <td class="score-cell ">82.00</td>
+                
+                <td class="score-cell ">90.00</td>
+                
+                <td class="score-cell ">88.00</td>
+                
+                <td class="score-cell ">82.00</td>
+                
+                <td class="score-cell ">84.00</td>
+                
+                <td class="score-cell ">84.00</td>
+                
+                <td class="score-cell ">90.00</td>
+                
+                <td class="score-cell ">90.00</td>
+                
+                <td class="score-cell ">90.00</td>
+                
+                <td class="score-cell ">82.00</td>
+                
+                <td class="score-cell ">88.00</td>
+                
+                <td class="score-cell ">90.00</td>
+                
+                <td class="score-cell ">80.00</td>
+                
+                <td class="score-cell ">86.00</td>
+                
+                <td class="score-cell ">80.00</td>
+                
+                <td class="score-cell ">90.00</td>
+                
+                <td class="score-cell ">80.00</td>
+                
+                <td class="score-cell ">34.00</td>
+                
+                <td class="score-cell ">90.00</td>
+                
+                <td class="score-cell  rank-1">100.00</td>
+                
+            </tr>
+            
+        </tbody>
+    </table>
+</body>
+</html>
